@@ -1,0 +1,29 @@
+#include <cstdint>
+
+constexpr uint8_t NUM_WEAK_KEYS = 4;
+constexpr uint8_t NUM_SEMI_WEAK_KEY_PAIRS = 6;
+
+constexpr uint64_t weak_keys[] = {
+    0x0101010101010101,
+    0xFEFEFEFEFEFEFEFE,
+    0xE0E0E0E0F1F1F1F1,
+    0x1F1F1F1F0E0E0E0E
+};
+
+constexpr uint64_t semi_weak_key_1[] = {
+    0x011F011F010E010E,
+    0x01E001E001F101F1,
+    0x01FE01FE01FE01FE,
+    0x1FE01FE00EF10EF1,
+    0x1FFE1FFE0EFE0EFE,
+    0xE0FEE0FEF1FEF1FE
+};
+
+constexpr uint64_t semi_weak_key_2[] = {
+    0x1F011F010E010E01,
+    0xE001E001F101F101,
+    0xFE01FE01FE01FE01,
+    0xE01FE01FF10EF10E,
+    0xFE1FFE1FFE0EFE0E,
+    0xFEE0FEE0FEF1FEF1
+};
