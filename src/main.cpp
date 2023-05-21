@@ -32,6 +32,7 @@ void simulate_semi_weak_keys(uint64_t plaintext, FILE *output_file)
         uint64_t ciphertext = DES::encrypt(plaintext, key_1);
         fprintf_s(output_file, "Ciphertext (w/ EK1):\t%#llx\n\n", ciphertext);
 
+        cipher = DES(key_2);
         fprintf_s(output_file, "Encryption key 2:\t%#llx\n", key_2);
         print_sub_keys(cipher, output_file);
 
